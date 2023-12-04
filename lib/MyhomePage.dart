@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
 import 'package:w_app/Select.dart';
 import 'package:w_app/provider/MyModel.dart';
@@ -93,7 +94,7 @@ class _HomePageState extends State<HomePage> {
       ),
       backgroundColor: Colors.black,
       body: SafeArea(
-          child: isloading?Center(child: CircularProgressIndicator()):Container(
+          child: isloading?Center(child: Container(child:LottieBuilder.network('https://app.lottiefiles.com/animation/946de167-d5d2-44d2-85c8-30760de282d2'),)):Container(
             height: height ,
             width: width,
             color: Colors.black,
